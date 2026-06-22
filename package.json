@@ -1,0 +1,23 @@
+{
+    "name": "@xiaohou2503687-design/pagesnap",
+    "version": "0.1.0",
+    "description": "AI-powered landing page CRO auditor — screenshot, analyze, optimize conversions",
+    "main": "src/index.js",
+    "bin": {
+        "pagesnap": "./bin/pagesnap.js"
+    },
+    "scripts": {
+        "audit": "node bin/pagesnap.js audit",
+        "compare": "node bin/pagesnap.js compare"
+    },
+    "keywords": ["cro", "landing-page", "ab-testing", "conversion", "optimization", "cli", "indie-dev"],
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "commander": "^12.1.0",
+        "playwright": "^1.45.0"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

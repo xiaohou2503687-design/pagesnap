@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PageSnap - AI CRO Auditor for Landing Pages | $12/mo</title>
+<meta name="description" content="One command to find where your landing page is losing conversions. AI-powered CRO audit for indie hackers.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#0a0a0a;color:#fff;line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:80px 20px 50px;background:linear-gradient(135deg,#0a0a0a 0%,#2e1a3a 50%,#1a0a2e 100%)}
+.hero h1{font-size:3.2em;font-weight:800;background:linear-gradient(135deg,#ff6b9d,#c44dff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px}
+.hero .tagline{font-size:1.3em;color:#999;max-width:650px;margin:0 auto 30px}
+.hero .demo-box{background:#111;border:1px solid #333;border-radius:12px;padding:24px;max-width:650px;margin:0 auto 30px;text-align:left;font-family:"Fira Code",monospace;font-size:.9em}
+.hero .demo-box .prompt{color:#ff6b9d}
+.hero .demo-box .cmd{color:#c44dff}
+.hero .demo-box .output{color:#aaa;margin-top:8px}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,#ff6b9d,#c44dff);color:#fff;text-decoration:none;padding:16px 48px;border-radius:50px;font-size:1.2em;font-weight:700;cursor:pointer;border:none;transition:transform .2s,box-shadow .2s}
+.cta-btn:hover{transform:scale(1.05);box-shadow:0 0 30px rgba(196,77,255,.4)}
+.guarantee{font-size:.85em;color:#666;margin-top:10px}
+.features{padding:80px 0}
+.features h2{text-align:center;font-size:2em;margin-bottom:50px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#111;border:1px solid #222;border-radius:12px;padding:28px;transition:border-color .2s}
+.card:hover{border-color:#c44dff}
+.card .icon{font-size:2em;margin-bottom:12px}
+.card h3{font-size:1.2em;margin-bottom:8px;color:#c44dff}
+.card p{color:#999;font-size:.95em}
+.pricing{padding:80px 0}
+.pricing h2{text-align:center;font-size:2em;margin-bottom:50px}
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.pack{background:#111;border:1px solid #222;border-radius:16px;padding:30px;text-align:center;transition:border-color .2s;position:relative}
+.pack:hover{border-color:#c44dff}
+.pack.featured{border-color:#c44dff;box-shadow:0 0 20px rgba(196,77,255,.2)}
+.pack .badge{position:absolute;top:-12px;right:20px;background:#c44dff;color:#fff;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700}
+.pack h3{font-size:1.2em;margin-bottom:8px}
+.pack .price{font-size:2.5em;font-weight:800;color:#ff6b9d;margin:12px 0}
+.pack .price .unit{font-size:.4em;color:#666}
+.pack .desc{color:#999;font-size:.9em;margin-bottom:16px;min-height:40px}
+.pack ul{list-style:none;text-align:left;margin-bottom:20px}
+.pack ul li{padding:5px 0;color:#aaa;font-size:.9em}
+.pack ul li::before{content:"✓ ";color:#c44dff}
+.pack .buy-btn{display:block;background:#c44dff;color:#fff;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;cursor:pointer;border:none;width:100%;font-size:1em;transition:background .2s}
+.pack .buy-btn:hover{background:#a33dd4}
+.faq{padding:60px 0 80px}
+.faq h2{text-align:center;font-size:2em;margin-bottom:40px}
+.faq-item{background:#111;border:1px solid #222;border-radius:8px;padding:20px;margin-bottom:12px}
+.faq-item h3{color:#c44dff;margin-bottom:8px;font-size:1.05em}
+.faq-item p{color:#999;font-size:.9em}
+footer{text-align:center;padding:40px 20px;color:#555;font-size:.85em;border-top:1px solid #222}
+footer a{color:#c44dff;text-decoration:none}
+@media(max-width:768px){.hero h1{font-size:2em}.hero .demo-box{font-size:.75em}}
+</style>
+</head>
+<body>
+<section class="hero"><div class="container">
+<h1>PageSnap</h1>
+<p class="tagline">One command to find where your landing page<br>is leaking conversions. AI-powered CRO audit.</p>
+<div class="demo-box">
+<span class="prompt">$</span> <span class="cmd">npx pagesnap audit https://yoursite.com</span>
+<div class="output">
+📸 PageSnap: Auditing https://yoursite.com...<br>━━━━━━━━━━━━━━━━━━<br>📊 CRO Audit Report — Grade: C+ (62/105)<br>
+  ██████░░░░ Hero Section: 15/25<br>    ✗ CTA button visible above fold<br>
+  ████░░░░░░ Social Proof: 8/20<br>    ✗ Has testimonials or reviews<br>
+  ████████░░ Pricing & Trust: 20/25<br>
+💡 Top 3 fixes → estimated +35% conversion rate</div></div>
+<a href="#pricing" class="cta-btn">Audit Your Page - Free</a>
+<p class="guarantee">No credit card · 5 free audits/month · Works with any public URL</p>
+</div></section>
+<section class="features"><div class="container">
+<h2>What PageSnap Analyzes</h2>
+<div class="grid">
+<div class="card"><div class="icon">🎯</div><h3>Hero & CTA</h3><p>Headline clarity, CTA visibility above fold, hero image engagement. First impressions matter.</p></div>
+<div class="card"><div class="icon">⭐</div><h3>Social Proof</h3><p>Testimonials, user counts, client logos, reviews. Build trust instantly.</p></div>
+<div class="card"><div class="icon">💰</div><h3>Pricing & Trust</h3><p>Pricing clarity, guarantees, FAQ, contact info. Remove purchase anxiety.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Mobile Experience</h3><p>Viewport config, responsive images, tap targets. 60%+ traffic is mobile.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Performance</h3><p>Image count, script bloat, load time. Every 1s delay = 7% conversion loss.</p></div>
+<div class="card"><div class="icon">🔬</div><h3>Compare Mode</h3><p>A/B test two landing pages side by side. Know which variant converts better.</p></div>
+</div></div></section>
+<section class="pricing" id="pricing"><div class="container">
+<h2>Simple Pricing</h2>
+<div class="packs">
+<div class="pack"><h3>Free</h3><div class="price">$0<span class="unit">/mo</span></div><p class="desc">For solo devs testing ideas</p><ul><li>5 audits / month</li><li>Basic CRO scoring</li><li>Screenshots</li></ul><a href="#" class="buy-btn">Install Free</a></div>
+<div class="pack featured"><div class="badge">Popular</div><h3>Pro</h3><div class="price">$12<span class="unit">/mo</span></div><p class="desc">For indie hackers optimizing</p><ul><li>100 audits / month</li><li>Full CRO analysis</li><li>Compare mode</li><li>AI recommendations</li></ul><a href="#" class="buy-btn">Subscribe Pro</a></div>
+<div class="pack"><h3>Lifetime</h3><div class="price">$99<span class="unit">once</span></div><p class="desc">Pay once, audit forever</p><ul><li>Unlimited audits</li><li>All Pro features</li><li>Lifetime updates</li></ul><a href="#" class="buy-btn">Buy Lifetime</a></div>
+</div></div></section>
+<section class="faq"><div class="container">
+<h2>FAQ</h2>
+<div class="faq-item"><h3>How is this different from Hotjar/FullStory?</h3><p>Those are $39-99/mo for heatmaps and recordings. PageSnap is a CLI-first CRO auditor that gives you actionable fixes, not just data.</p></div>
+<div class="faq-item"><h3>Does it work with SPAs?</h3><p>Yes. Headless Chromium renders JavaScript fully before analysis.</p></div>
+<div class="faq-item"><h3>Can I run it in CI/CD?</h3><p>npx pagesnap audit --json outputs structured data for any pipeline.</p></div>
+</div></section>
+<footer><div class="container"><p>© 2026 PageSnap · <a href="https://github.com/xiaohou2503687-design/pagesnap">GitHub</a></p></div></footer>
+</body></html>
